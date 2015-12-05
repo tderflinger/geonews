@@ -13,7 +13,7 @@ $("#createPin" ).click(function() {
          last_marker = L.marker([lat, lng]).addTo(map)
 
          $( "#dialog" ).dialog({
-             minWidth: 400
+             minWidth: 350
          });
      }
 
