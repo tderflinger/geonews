@@ -32,21 +32,39 @@
 
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Geo News</a>
+            <a><img class="logo" src="logo.png"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a id="createPin" href="#dialogPage">Pin Article +</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="createPin" href="#dialogPage">Create New Pin</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Kai Suden</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </nav>
 
-<div id="map"></div>
 
-<div id="sidebar"><p>TEST</p></div>
+<div id="map"></div>
+<div id="sidebar">
+    <ul class="list-group" id="user_menu">
+        <li class="list-group-item" id="users">
+            Filter Users:
+        </li>
+    </ul>
+
+    <ul class="list-group" id="tag_menu">
+        <li class="list-group-item" id="tags">
+            Filter Tags:
+        </li>
+    </ul>
+
+</div>
+
 
 <div id="dialog" title="Create a new Pin" class="input-group">
     <form>
@@ -55,10 +73,10 @@
         <label>Description: </label><input type="text" class="form-control" id="new-description">
         <br>
         <label>Url:</label>
-        <input type="text" class="form-control" id="new-url">
+        <input type="text" class="form-control create_input" id="new-url">
         <br>
         <label>Copyright:</label>
-        <input type="text" class="form-control"  id="new-copyright">
+        <input type="text" class="form-control create_input"  id="new-copyright">
         <br>
         <button id="new-save" type="button" class="btn btn-default btn-lg">Save</button>
         <button id="new-cancel" type="button" class="btn btn-default btn-lg">Cancel</button>
@@ -66,7 +84,10 @@
     </form>
 </div>
 
+
+<script src="get_http_param.js"></script>
 <script src="show_map.js"></script>
+<script src="create_sitemenu.js"></script>
 <script src="create_pin.js"></script>
 
 </body>

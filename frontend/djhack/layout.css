@@ -1,7 +1,11 @@
 body {background-color: white}
-#map { height: 700px; margin-top: 50px; margin-right: 300px; margin-bottom: 0px;}
-button {margin-top: 30px}
-input {margin-top: 10px}
+#map {height: 730px; width:100%; margin-top: 50px; margin-bottom: 0px;}
+.input-group button {margin-top: 30px}
+.create_input {margin-top: 5px}
 label {margin-top: 15px}
-#sidebar { float:right;}
-#dialog {padding-left: 50px}
+#dialog {padding-left: 30px}
+.navbar-header .logo {height:50px; margin-left: 0px}
+#sidebar { z-index: 1; width:350px; height:700px; background-color:transparent; position: absolute; top: 50px; right: 0px; padding-right:10px}
+#users{background:gray; color:white; opacity: 1; margin-top: 50px; border-top:none, border-right:none}
+#tags{background:gray; color:white; opacity: 0.99; border-top:none, border-right:none}
+.list-group-item{border-left:none}
