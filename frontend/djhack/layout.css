@@ -1,0 +1,6 @@
+body {background-color: white}
+#map { height: 700px; margin-top: 50px; margin-right: 300px; margin-bottom: 0px;}
+button {margin-top: 30px}
+input {margin-top: 10px}
+label {margin-top: 15px}
+#dialog {padding-left: 50px}
