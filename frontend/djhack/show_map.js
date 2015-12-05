@@ -4,21 +4,21 @@ var data_json = '{ "pins" : [' +
     '{ "id":"001" , "url":"http://www.google.de", "tags":"music", "lat":"48.13719", "long":"11.57579", "description":"BLA, bla, BLA", "title":"Headline", "user":"Stephan Baier", "copyright":"copyright"  },' +
     '{ "id":"002" , "url":"http://www.google.de", "tags":"music", "lat":"48.13800", "long":"11.57690", "description":"BLA, bla, BLA", "title":"Headline", "user":"Stephan Baier", "copyright":"copyright"  },' +
     '{ "id":"003" , "url":"http://www.google.de", "tags":"music", "lat":"48.13450", "long":"11.57430", "description":"BLA, bla, BLA", "title":"Headline", "user":"Stephan Baier", "copyright":"copyright"  }' +
-    ']}';
+    '],'+
+    '"users" : [ { "id":"001", "surname":"Kai", "name":"Suden" }, '+
+    ' { "id":"002", "surname":"Sabine", "name":"Longen" },'+
+    ' { "id":"003", "surname":"Glamour", "name":"Redaktion Mode" }]}';
 
 data = jQuery.parseJSON(data_json);
 
-/*get_url = "http://localhost:8080/pins"
+get_url = "http://localhost:8080/pins"
 
 $.ajax({
     url: get_url,
     success: function(){
         console.log('get successful')
-
-
-
     }
-});*/
+});
 
 map = L.map('map').setView([48.13719, 11.57579], 16);
 

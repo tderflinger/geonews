@@ -2,7 +2,6 @@ package geowebrest
 
 import grails.rest.*
 
-@Resource(uri='/pinsx', formats=['json'])
 class Pin {
 
     int id

@@ -3,4 +3,5 @@ body {background-color: white}
 button {margin-top: 30px}
 input {margin-top: 10px}
 label {margin-top: 15px}
+#sidebar { float:right;}
 #dialog {padding-left: 50px}
