@@ -5,7 +5,6 @@ import geowebrest.User
 import geowebrest.Pin
 import org.springframework.transaction.annotation.*
 
-
 class PinController {
 
     def pins() {
